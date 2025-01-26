@@ -1,6 +1,6 @@
-function subscribe(){
-    var email=document.getElementById("email3").value;
-    if(document.getElementById("email3").value==""){
+function submit(){
+    var email=document.getElementById("emailv").value
+    if(document.getElementById("emailv").value==""){
         document.getElementById("sub").disabled;
         document.getElementById("errorm").classList.add("error1");
         document.getElementById("errorm").classList.remove("error");
@@ -14,7 +14,7 @@ function subscribe(){
     return false;
    }
     else{
-    let email=document.getElementById("email3").value;
+    let email=document.getElementById("emailv").value;
     document.getElementById("emailu").innerHTML = email;
     document.getElementById("signup").classList.add("remove");
     document.getElementById("sucess").classList.add("cardsucess1");
